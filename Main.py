@@ -175,6 +175,7 @@ else:
         html.append("<li><b>Address:</b> <a href\""+parsedteaminfo["gmaps_url"]+"\">No address, but linked GMaps.</a></li>")
     else:
         html.append("<li><b>Address:</b> <a href\""+parsedteaminfo["gmaps_url"]+"\">"+parsedteaminfo["address"]+"</a></li>")
+html.append("</ul>")
 print("Done.")
 
 # <<< WRITE HTML TO FILE >>>
