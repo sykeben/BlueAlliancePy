@@ -103,7 +103,7 @@ elif testrequest.status_code == 300:
     print("Successful, but nothing has been modified since.")
 elif testrequest.status_code == 401:
     print("Unsuccessful, the key is invalid.")
-    quit(401)
+    keyvalid = False
 elif testrequest.status_code == 404:
     print("Unsuccessful, The server cannot be found.")
     quit(404)
@@ -114,6 +114,8 @@ print("")
 # <<< USER CONFIGURATION >>>
 print("Please input the following information:")
 teamnumber = input("Team # ......... ")
+if not(keyvalid):
+    apikey = input("API Key ........ ")
 print("")
 
 # <<< GET ALL TEAM INFO >>>
@@ -124,7 +126,7 @@ if teaminforequest.status_code == 200:
 elif teaminforequest.status_code == 300:
     print("Successful, but nothing has been modified since.")
 elif teaminforequest.status_code == 401:
-    print("Unsuccessful, the key is invalid.")
+    print("Unsuccessful, the API key is invalid.")
     quit(401)
 elif teaminforequest.status_code == 404:
     print("Unsuccessful, The server cannot be found.")
