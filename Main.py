@@ -33,6 +33,16 @@ except ImportError:
 except ImportWarning:
     print("Done, but a warning was issued.")
 
+print("- Web Browser . . . ", end='')
+try:
+    import webbrowser
+    print("Done.")
+except ImportError:
+    print("An error occurred.")
+    importsuccess = False
+except ImportWarning:
+    print("Done, but a warning was issued.")
+
 print("- Requests . . . ", end='')
 try:
     import requests
@@ -169,3 +179,16 @@ htmlfile = open("results.html", "w")
 for item in html:
     htmlfile.write("%s\n" % item)
 print("Done.")
+
+# <<< OPEN HTML FILE IN BROWSER >>>
+print("Opening HTML file in browser . . . ", end='')
+try:
+    webbrowser.open("results.html")
+    print("Done.")
+except webbrowser.Error:
+    print("Encountered a browser control error.")
+except:
+    print("Encountered some error.")
+
+# <<< QUIT >>>
+quit(0)
