@@ -141,7 +141,7 @@ print("Adding general team info . . . ", end='')
 html.append("<h2>General Information</h2>")
 html.append("<ul>")
 html.append("<li><b>Name:</b> "+parsedteaminfo["name"]+"</li>")
-if parsedteaminfo["motto"] == null:
+if parsedteaminfo["nickname"] == null:
     html.append("<li><b>Nickname:</b> None.</li>")
 else:
     html.append("<li><b>Nickname:</b> "+parsedteaminfo["nickname"]+"</li>")
