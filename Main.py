@@ -186,20 +186,27 @@ try:
     os.remove("results.html")
 except OSError:
     pass
-htmlfile = open("results.html", "w")
-for item in html:
-    htmlfile.write("%s\n" % item)
-print("Done.")
-
-# <<< OPEN HTML FILE IN BROWSER >>>
-print("Opening HTML file in browser . . . ", end='')
 try:
-    webbrowser.open("results.html")
+    htmlfile = open("results.html", "w")
+    for item in html:
+        htmlfile.write("%s\n" % item)
     print("Done.")
-except webbrowser.Error:
-    print("Encountered a browser control error.")
+    # <<< OPEN HTML FILE IN BROWSER >>>
+    print("Opening HTML file in browser . . . ", end='')
+    try:
+        webbrowser.open("results.html")
+        print("Done.")
+    except webbrowser.Error:
+        print("Encountered a browser control error.")
+    except:
+        print("Encountered some error.")
 except:
-    print("Encountered some error.")
+    print("An error occurred, now printing HTML data instead of viewing it from a file within your browser:")
+    print("")
+    print("##### START OF HTML DATA #####")
+    for item in html:
+        print(str(item))
+    print("##### END OF HTML DATA #####")
 
 # <<< QUIT >>>
 quit(0)
