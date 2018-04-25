@@ -142,20 +142,14 @@ print("Done.")
 print("Adding general team info . . . ", end='')
 html.append("<h2>General Information</h2>")
 html.append("<ul>")
-html.append("<li><b>Name:</b> "+parsedteaminfo["name"]+"</li>")
-if parsedteaminfo["nickname"] == null:
-    html.append("<li><b>Nickname:</b> None.</li>")
-else:
-    html.append("<li><b>Nickname:</b> "+parsedteaminfo["nickname"]+"</li>")
+html.append("<li><b>Name:</b> "+str(parsedteaminfo["name"])+"</li>")
+html.append("<li><b>Nickname:</b> "+str(parsedteaminfo["nickname"])+"</li>")
 html.append("<li><b>Number:</b> "+str(parsedteaminfo["team_number"])+"</li>")
 html.append("<li><b>Rookie Year:</b> "+str(parsedteaminfo["rookie_year"])+"</li>")
-if parsedteaminfo["motto"] == null:
-    html.append("<li><b>Motto:</b> None.</li>")
-else:
-    html.append("<li><b>Motto:</b> "+parsedteaminfo["motto"]+"</li>")
-html.append("<li><b>City:</b> "+parsedteaminfo["city"]+"</li>")
-html.append("<li><b>State/Providence:</b> "+parsedteaminfo["state_prov"]+"</li>")
-html.append("<li><b>Country:</b> "+parsedteaminfo["country"]+"</li>")
+html.append("<li><b>Motto:</b> "+str(parsedteaminfo["motto"])+"</li>")
+html.append("<li><b>City:</b> "+str(parsedteaminfo["city"])+"</li>")
+html.append("<li><b>State/Providence:</b> "+str(parsedteaminfo["state_prov"])+"</li>")
+html.append("<li><b>Country:</b> "+str(parsedteaminfo["country"])+"</li>")
 html.append("</ul>")
 print("Done.")
 
@@ -163,20 +157,8 @@ print("Done.")
 print("Adding team contact info . . . ", end='')
 html.append("<h2>Contact Information</h2>")
 html.append("<ul>")
-if parsedteaminfo["website"] == null:
-    html.append("<li><b>Website:</b> None.</li>")
-else:
-    html.append("<li><b>Website:</b> <a href=\""+parsedteaminfo["website"]+"\">"+parsedteaminfo["website"]+"</a></li>")
-if parsedteaminfo["gmaps_url"] == null:
-    if parsedteaminfo["address"] == null:
-        html.append("<li><b>Address:</b> No address.</li>")
-    else:
-        html.append("<li><b>Address:</b> "+parsedteaminfo["address"]+"</li>")
-else:
-    if parsedteaminfo["address"] == null:
-        html.append("<li><b>Address:</b> <a href\""+parsedteaminfo["gmaps_url"]+"\">No address, but linked GMaps.</a></li>")
-    else:
-        html.append("<li><b>Address:</b> <a href\""+parsedteaminfo["gmaps_url"]+"\">"+parsedteaminfo["address"]+"</a></li>")
+html.append("<li><b>Website:</b> <a href=\""+str(parsedteaminfo["website"])+"\">"+str(parsedteaminfo["website"])+"</a></li>")
+html.append("<li><b>Address:</b> <a href=\""+str(parsedteaminfo["gmaps_url"])+"\">"+str(parsedteaminfo["address"])+"</a></li>")
 html.append("</ul>")
 print("Done.")
 
