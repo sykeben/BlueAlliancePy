@@ -8,8 +8,16 @@ BlueAlliancePy is a Python-based client for Blue Alliance. It uses their JSON AP
 * This app uses *my* API key, so don't abuse it please.
 
 ### Libraries Used
-* time
-* webbrowser
-* requests
-* json
-* os
+* `time`
+* `webbrowser`
+* `requests`
+* `json`
+* `os`
+* `random` (only used by the Kiosk)
+* `sleep` from `time` (only used by the kiosk)
+
+### Operating the Normal Client
+Operating the normal client is easy. Run it, follow the instructions, and boom.
+
+### Operating the Kiosk
+Operating the kiosk is a bit jank as of now. To operate the kiosk, run Kiosk.py and then follow the instructions. Then, when the browser opens, refresh the page until something appears. It will then auto-refresh from there. Sometimes it may come up with a blank page and not auto-refresh, this will be fixed soon.
