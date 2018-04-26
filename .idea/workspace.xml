@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479c5b7d-1aaa-4fe1-927f-1eb5230d1b91" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Kiosk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/thatg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/thatg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlueAlliancePyLibDemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlueAlliancePyLib/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlueAlliancePyLibDemo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BlueAlliancePyLibDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="110" column="49" lean-forward="true" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,9 +55,14 @@
         <option value="$PROJECT_DIR$/None/readme.md" />
         <option value="$PROJECT_DIR$/None/index.py" />
         <option value="$PROJECT_DIR$/None/index.html" />
-        <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Kiosk.py" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/BlueAlliancePyLib/BlueAlliancePyLib.py" />
+        <option value="$PROJECT_DIR$/BlueAlliancePyLib/Demo.py" />
+        <option value="$PROJECT_DIR$/BlueAlliancePy Library/Demo.py" />
+        <option value="$PROJECT_DIR$/BlueAlliancePyLib/__init__.py" />
+        <option value="$PROJECT_DIR$/BlueAlliancePyLibDemo.py" />
       </list>
     </option>
   </component>
@@ -63,7 +89,7 @@
             <path>
               <item name="BlueAlliancePy" type="b2602c69:ProjectViewProjectNode" />
               <item name="BlueAlliancePy" type="462c0819:PsiDirectoryNode" />
-              <item name="None" type="462c0819:PsiDirectoryNode" />
+              <item name="BlueAlliancePyLib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -77,6 +103,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thatg\Documents\GitHub\BlueAlliancePy" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\thatg\Documents\GitHub\BlueAlliancePy\None" />
     </key>
@@ -93,7 +122,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Kiosk">
+  <component name="RunManager" selected="Python.BlueAlliancePyLibDemo">
+    <configuration name="BlueAlliancePyLibDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BlueAlliancePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BlueAlliancePyLibDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BlueAlliancePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BlueAlliancePy Library" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BlueAlliancePy Library/Demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Kiosk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BlueAlliancePy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,9 +198,13 @@
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Kiosk" />
+      <item itemvalue="Python.Demo" />
+      <item itemvalue="Python.BlueAlliancePyLibDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BlueAlliancePyLibDemo" />
+        <item itemvalue="Python.Demo" />
         <item itemvalue="Python.Kiosk" />
         <item itemvalue="Python.Main" />
       </list>
@@ -157,14 +226,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.42857143" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50073206" side_tool="true" weight="0.42857143" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.42857143" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.42835367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -309,9 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/None/index.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/None/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -326,9 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kiosk_results.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -339,17 +402,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Kiosk.py">
+    <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
+        <state relative-caret-position="-624">
+          <caret line="94" selection-start-line="94" selection-end-line="94" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/BlueAlliancePy Library/Demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="96">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kiosk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="114" column="74" lean-forward="true" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlueAlliancePyLib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlueAlliancePyLibDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="110" column="49" lean-forward="true" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
         </state>
       </provider>
     </entry>
