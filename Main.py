@@ -139,7 +139,7 @@ while not(teamvalid):
         print("Unsuccessful, The page cannot be found.")
         print("That team may not exist.")
         print("")
-        print("Input a different team number: ", end='')
+        print("Input a different team number ...... ", end='')
         teamnumber = input("")
         print("")
     else:
