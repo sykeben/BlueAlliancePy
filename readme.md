@@ -4,8 +4,8 @@ BlueAlliancePy is a Python-based client for Blue Alliance. It uses their JSON AP
 
 ### Things to Keep in Mind
 * This is truly a work-in-progress and will be super buggy and may not work at times.
-* Bear with the single, one, lone developer \(me\) when things get broken, and please wait for it to be fixed.
-* This app uses **my** API key, so don't abuse it please.
+* Bear with the single, one, lone developer \(me, lol\) when things get broken, and please wait for it to be fixed.
+* This app uses *my* API key, so don't abuse it please.
 
 ### Libraries Used
 * time

@@ -12,6 +12,7 @@ print("Setting variables . . . ", end='')
 importsuccess = True
 keyvalid = True
 null = None
+teamvalid = False
 print("Done.")
 print("")
 
@@ -20,9 +21,10 @@ print("Starting HTML . . . ", end='')
 html = ["<html>",
         "<head>",
         "<title>BlueAlliancePy Results</title>",
+        "<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">",
         "<style>",
-        "body {",
-        "font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;",
+        "* {",
+        "font-family: \'Roboto\', sans-serif;",
         "}",
         "</style>",
         "</head><body>",
@@ -116,23 +118,33 @@ print("Please input the following information:")
 teamnumber = input("Team # ......... ")
 if not(keyvalid):
     apikey = input("API Key ........ ")
+    keyvalid = True
 print("")
 
 # <<< GET ALL TEAM INFO >>>
-print("Gathering all team information . . . ", end='')
-teaminforequest = requests.get(baseurl+"/team/frc"+teamnumber+urlparameters)
-if teaminforequest.status_code == 200:
-    print("Successful.")
-elif teaminforequest.status_code == 300:
-    print("Successful, but nothing has been modified since.")
-elif teaminforequest.status_code == 401:
-    print("Unsuccessful, the API key is invalid.")
-    quit(401)
-elif teaminforequest.status_code == 404:
-    print("Unsuccessful, The server cannot be found.")
-    quit(404)
-else:
-    print("Recieved a weird code: "+str(teaminforequest.status_code))
+while not(teamvalid):
+    print("Gathering all team information . . . ", end='')
+    teaminforequest = requests.get(baseurl+"/team/frc"+teamnumber+urlparameters)
+    if teaminforequest.status_code == 200:
+        print("Successful.")
+        teamvalid = True
+    elif teaminforequest.status_code == 300:
+        print("Successful, but nothing has been modified since.")
+        teamvalid = True
+    elif teaminforequest.status_code == 401:
+        print("Unsuccessful, the API key is invalid.")
+        print("Quitting . . . ")
+        quit(401)
+    elif teaminforequest.status_code == 404:
+        print("Unsuccessful, The page cannot be found.")
+        print("That team may not exist.")
+        print("")
+        print("Input a different team number: ", end='')
+        teamnumber = input("")
+        print("")
+    else:
+        print("Received a weird code: "+str(teaminforequest.status_code))
+        print("The program may be unstable now.")
 print("")
 print("Parsing team information . . . ", end='')
 parsedteaminfo = json.loads(teaminforequest.text)
