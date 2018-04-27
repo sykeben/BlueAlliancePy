@@ -27,3 +27,14 @@ def getstatus(value_name):
     else:
         out = data[value_name]
     return out
+
+
+def checkteam(team_number):
+    team_number = str(team_number)
+    data_code = requests.get(base_url + "/team/frc" + team_number + "?X-TBA-Auth-Key=" + api_key).status_code
+    if data_code == 200:
+        return True
+    elif data_code == 304:
+        return True
+    elif data_code == 404:
+        return False
