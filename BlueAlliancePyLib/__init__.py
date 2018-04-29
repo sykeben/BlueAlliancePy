@@ -38,3 +38,15 @@ def checkteam(team_number):
         return True
     elif data_code == 404:
         return False
+
+
+def checkserveronline():
+    try:
+        if requests.get("https://www.thebluealliance.com").status_code != 404:
+            return True
+        else:
+            return False
+    except ConnectionError:
+        return False
+    except requests.ConnectionError:
+        return False
